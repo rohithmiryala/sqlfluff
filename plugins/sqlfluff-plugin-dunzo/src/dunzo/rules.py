@@ -83,6 +83,6 @@ class Rule_Dunzo_L001(BaseRule):
                     where_clause = True
             if not where_clause:
                 return LintResult(
-                    anchor=None,
+                    anchor=segment,
                     description=f"update statement without where clause not allowed",
                 )
